@@ -1,4 +1,5 @@
 import "../../styles/globals.css";
+import "easymde/dist/easymde.min.css";
 import type { Metadata } from "next";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";

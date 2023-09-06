@@ -8,12 +8,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: any }) {
   const post = await getPostBySlug(params.slug);
-  console.log(post, "pppppp");
   return { title: post.title };
 }
 
 const page = async ({ params }: { params: any }) => {
   const post = await getPostBySlug(params.slug);
+  console.log(post, "pppppp", params);
   return <DefaultPost post={post} />;
 };
 

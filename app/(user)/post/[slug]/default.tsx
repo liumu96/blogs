@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { PortableText } from "@/lib/plugins/portabletext";
 import AuthorCard from "@/components/blog/AuthorCard";
+import MarkdownText from "./mark-html";
 
 const DefaultPost = (props: any) => {
   const { loading, post } = props;
@@ -29,14 +30,13 @@ const DefaultPost = (props: any) => {
           </div>
         </div>
       </Container>
-      <div className="relative z-0 mx-auto aspect-video max-w-screen-lg overflow-hidden lg:rounded-lg">
+      <div className="relative mx-64 z-0 aspect-video overflow-hidden lg:rounded-lg">
         {imageProps && (
           <Image
             src={imageProps.src}
             alt={post.mainImage?.alt || "Thumbnail"}
             loading="eager"
             fill
-            sizes="100vw"
             className="object-cover"
           />
         )}
@@ -44,7 +44,8 @@ const DefaultPost = (props: any) => {
       <Container>
         <article className="mx-auto max-w-screen-md ">
           <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
-            {post.body && <PortableText value={post.body} />}
+            {/* {post.body && <PortableText value={post.body} />} */}
+            {post.body && <MarkdownText mdtext={post.body} />}
           </div>
           <div className="mb-7 mt-7 flex justify-center">
             <Link
