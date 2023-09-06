@@ -4,7 +4,7 @@ import { MarkdownInput, MarkdownInputProps } from "sanity-plugin-markdown";
 export function CustomMarkdownInput(
   props: JSX.IntrinsicAttributes & MarkdownInputProps
 ) {
-  const reactMdeProps: MarkdownInputProps["reactMdeProps"] = useMemo(() => {
+  const reactMdeProps: any = useMemo(() => {
     return {
       options: {
         toolbar: [

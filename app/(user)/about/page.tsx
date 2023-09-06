@@ -14,7 +14,7 @@ const page = () => {
       <h1 className="text-3xl font-semibold text-gray-700 py-4 dark:text-gray-200">
         Hi,{" "}
         <span className="bg-indigo-400 text-white rounded px-1 dark:bg-indigo-500">
-          I'm Liu Xing
+          I&apos;m Liu Xing
         </span>{" "}
         . Nice to meet you.
       </h1>
@@ -24,7 +24,7 @@ const page = () => {
       </p>
       <br />
       <p className="text-gray-600  dark:text-indigo-200">
-        Now I'm a{" "}
+        Now I&apos;m a{" "}
         <span className="font-semibold text-blue-600">Freelancer</span> .
       </p>
       <br />

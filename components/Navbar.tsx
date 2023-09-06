@@ -23,7 +23,6 @@ const Navbar = () => {
   const toggleTheme = () => {
     if (isMounted) {
       setTheme(theme === "light" ? "dark" : "light");
-      console.log(theme);
     }
   };
 

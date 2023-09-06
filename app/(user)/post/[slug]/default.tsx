@@ -4,7 +4,6 @@ import { urlForImage } from "@/lib/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { PortableText } from "@/lib/plugins/portabletext";
 import AuthorCard from "@/components/blog/AuthorCard";
 import MarkdownText from "./mark-html";
 

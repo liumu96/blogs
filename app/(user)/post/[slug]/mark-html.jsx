@@ -16,11 +16,9 @@ async function main(mdtext) {
 
 const MarkdownText = ({ mdtext }) => {
   return (
-    <ReactMarkdown
-      children={mdtext}
-      remarkPlugins={[remarkMath]}
-      rehypePlugins={[rehypeKatex]}
-    />
+    <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+      {mdtext}
+    </ReactMarkdown>
   );
 };
 export default MarkdownText;
