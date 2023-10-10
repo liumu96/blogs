@@ -5,7 +5,7 @@ const page = () => {
     <div className="text-center flex flex-col items-center max-w-2xl pb-32 mx-auto pt-24">
       <Image
         className="rounded-full"
-        src="/1.jpg"
+        src="/me.jpg"
         width={200}
         height={200}
         alt="logo"
@@ -13,10 +13,8 @@ const page = () => {
       />
       <h1 className="text-3xl font-semibold text-gray-700 py-4 dark:text-gray-200">
         Hi,{" "}
-        <span className="bg-indigo-400 text-white rounded px-1 dark:bg-indigo-500">
-          I&apos;m Liu Xing
-        </span>{" "}
-        . Nice to meet you.
+        {/* <span className="bg-indigo-400 text-white rounded px-1 dark:bg-indigo-500"> */}
+        I&apos;m Liu Xing {/* </span>{" "} */}. Nice to meet you.
       </h1>
       <p className="text-gray-600 mt-4 dark:text-indigo-200">
         I used to be a Frontend Developer. I develop 3D visuals, user interfaces
@@ -25,13 +23,17 @@ const page = () => {
       <br />
       <p className="text-gray-600  dark:text-indigo-200">
         Now I&apos;m a{" "}
-        <span className="font-semibold text-blue-600">Freelancer</span> .
+        <span className="font-semibold text-blue-600">independent learner</span>{" "}
+        with a strong interest in
+        <span className="font-semibold text-blue-600"> Computer Graphics</span>!
+        .
       </p>
       <br />
       <p className="text-gray-600  dark:text-indigo-200">
         My research interest is{" "}
         <span className="font-semibold text-blue-600">
-          Physics Animation and Simulation.
+          {/* Physics Animation and Simulation. */}
+          Physically-based simulation and animation.
         </span>
       </p>
       <div className="text-center pt-8 flex space-x-2">
@@ -39,7 +41,7 @@ const page = () => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://liuxing96.vercel.app/CV.pdf"
+            href="https://liuxing96.vercel.app/CV"
           >
             CV
           </a>

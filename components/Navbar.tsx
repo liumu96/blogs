@@ -35,17 +35,15 @@ const Navbar = () => {
               href="/"
               className="flex items-center hover:text-indigo-600 text-gray-800 dark:text-gray-50"
             >
+              {/* <Image src="/logo.jpg" height={60} width={60} alt="logo" /> */}
               <Image
                 className="rounded-full"
-                src="/6.jpg"
+                src="/me-1.jpg"
                 width={50}
                 height={50}
                 alt="logo"
                 priority={false}
               />
-              <h1 className="mx-1 font-semibold text-base md:text-base">
-                Liu Xing
-              </h1>
             </Link>
             {/* posts categories */}
             <div className="dropdown inline-block relative mx-2">

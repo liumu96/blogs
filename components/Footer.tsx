@@ -28,14 +28,6 @@ const Footer = () => {
             >
               <SiGithub />
             </a>
-            <a
-              className="ml-4 text-gray-50"
-              href="https://www.linkedin.com/in/soumyajit4419/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FiLinkedin />
-            </a>
           </span>
         </div>
       </div>
