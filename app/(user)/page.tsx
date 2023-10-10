@@ -31,7 +31,7 @@ const HomePage = () => {
   if (!mounted) return;
 
   return (
-    <div className="pt-24 pb-10 h-screen overflow-scroll">
+    <div className="pt-24 pb-16 h-screen overflow-scroll">
       <Banner />
       {/* post card lists */}
       <Container>
