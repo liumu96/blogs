@@ -1,5 +1,6 @@
 import { SiTwitter, SiGithub, SiInstagram } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   const date = new Date();
@@ -7,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="absolute w-full -bottom-0">
       <div className="bg-indigo-600 dark:bg-indigo-900">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col justify-between sm:flex-row">
           <p className="text-gray-50 text-sm text-center sm:text-left">
             © {year}{" "}
             <a
@@ -26,7 +27,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <SiGithub />
+              <SiGithub size={20} />
+            </a>
+            <a
+              className="ml-4 text-gray-50"
+              href="mailto:liuxing199604@outlook.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <HiOutlineMail size={20} />
             </a>
           </span>
         </div>
