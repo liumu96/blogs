@@ -47,7 +47,7 @@ const page = () => {
             Physically-based simulation and animation
           </span>
           , and I'm actively seeking a{" "}
-          <span className="font-semibold text-blue-600">PhD</span> position in
+          <span className="font-semibold text-blue-600">Ph.D.</span> position in
           this field.
         </p>
       </div>
